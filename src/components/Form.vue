@@ -57,7 +57,7 @@ const resultado = () => {
 </template> -->
 
 <template>
-    <main class="container border border-dark p-3">
+    <main class="container border border-dark p-3" style="height: 250px;">
         <form class="row gy-3">
             <div class="col-12 col-md-4">
                 <input required @change="e => estado.primeiroNumero = parseFloat(e.target.value)"
@@ -78,7 +78,7 @@ const resultado = () => {
             </div>
         </form>
 
-        <div class="row mt-4 text-center">
+        <div class="row mt-4 text-center mt-5">
             <div class="col-12 col-md-6">
                 <p class="fw-bold">
                     Operação selecionada:
