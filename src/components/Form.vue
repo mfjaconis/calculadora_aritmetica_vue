@@ -45,7 +45,29 @@ const resultado = () => {
                 <option value="multiplicar">Multiplicar</option>
             </select>
         </form>
-        <p>Operação selecionada: {{ estado.filtro }}</p>
-        <p>Resultado: {{ resultado() }}</p>
+        <div class="d-flex justify-content-around mt-5">
+            <p>Operação selecionada: <span :class="estado.filtro" class="text-uppercase fw-bold">{{ estado.filtro
+                    }}</span>
+            </p>
+            <p>Resultado: <span :class="estado.filtro" class="text-uppercase fw-bold">{{ resultado() }}</span></p>
+        </div>
     </main>
 </template>
+
+<style>
+.somar {
+    color: green;
+}
+
+.subtrair {
+    color: red;
+}
+
+.dividir {
+    color: gray;
+}
+
+.multiplicar {
+    color: brown;
+}
+</style>
